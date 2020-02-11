@@ -1,1 +1,8 @@
+See https://dev.twitch.tv/docs/irc for basic info and example which is as v1.01
+
 Twitch Bot
+
+--Requirments 
+https://nodejs.org/en/
+https://www.npmjs.com/
+Version 1.03 later with https://robotjs.io/docs/
