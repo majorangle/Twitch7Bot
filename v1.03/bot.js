@@ -1,6 +1,5 @@
-// const myModule = require('./login.js'); // Public define, for github
-
-const myModule = require('/home/major/Documents/twitch/login.js'); // private define, for testing and demo
+// majorlee @ http://github.com/majorleearmy
+const myModule = require('./login.js'); // Public define, for github
 const tmi = require('tmi.js');
 const activeWin = require('active-win');
 
@@ -44,12 +43,13 @@ switch(commandName){
    		console.log(`${version}`);
 		break;
 	case 'help':
-		client.say(target, `Commands (help ,what ,dice ,reboot,test ,version)`);
+		client.say(target, `Commands (help,what,dice,reboot,test,main,version)`);
+		client.say(target, `savvy ${target}?`);
 	    break;
 	case 'dice':
 	    const num = rollDice(commandName);
 	    client.say(target, `You rolled a ${num}.`);
-	    console.log(`* Executed ${commandName} command`);
+	    console.log(`${target}* Executed ${commandName} command`);
 		break;
 	case 'youtube':
 		client.say(target, ``);
@@ -61,7 +61,10 @@ switch(commandName){
 		})();
 	    break;
 	case 'test': 
-	console('echo test');
+		console.log(`${target} => test`);
+	    break;
+	case 'main': 
+		main();
 	    break;
 	case 'reboot':
 		client.say(target, `we not there yet, you goto do it manual`);
