@@ -1,6 +1,7 @@
 const tmi = require('tmi.js');
-const myModule = require('./login.js');
+const myModule = require('./login.js'); // Public define, for github
 
+const activeWin = require('active-win');
 const opts = {
   identity: {
     username: myModule.username(),
@@ -10,6 +11,12 @@ const opts = {
     'majorlee_army'
   ]
 };
+
+
+(async () => { 
+	data = await activeWin();
+    	console.log(data.title);
+})();
 
 
 // Create a client with our options
@@ -29,6 +36,7 @@ function onMessageHandler (target, context, msg, self) {
   // Remove whitespace from chat message
   const commandName = msg.trim();
 
+console.log(`* RX: ${commandName}`);
 switch(commandName){
 	case 'dice':
 	    const num = rollDice(commandName);
@@ -38,8 +46,11 @@ switch(commandName){
 	case 'help':
 		client.say(target, `For now, we chill`);
 	    break;
-	case 'who':
-		client.say(target, `oot`);
+	case 'what': 
+		(async () => { 
+		data = await activeWin();
+		client.say(target, data.title);
+		})();
 	    break;
 	case 'reboot':
 		client.say(target, `we not there yet, you goto do it manual`);
@@ -48,6 +59,7 @@ switch(commandName){
    		console.log(`* Unknown command ${commandName}`);
 		break;
 }}
+
 
 // Function called when the "dice" command is issued
 function rollDice () {
