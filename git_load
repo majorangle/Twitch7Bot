@@ -1,9 +1,9 @@
-git add ./v1.01/*
-git add ./*
-git commit -m "Update V1.01 commit. 539"
-git remote add origin https://github.com/majorleearmy/Twitch7Bot.git
+
 git remote add upstream https://github.com/majorleearmy/Twitch7Bot.git
 git pull upstream master
+git add ./*
+git commit -m "Update V1.02 add commit."
+git remote add origin https://github.com/majorleearmy/Twitch7Bot.git
 git status
 git push origin master
 
