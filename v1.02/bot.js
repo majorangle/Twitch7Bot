@@ -1,6 +1,5 @@
 const tmi = require('tmi.js');
 const myModule = require('./login.js'); // Public define, for github
-
 const activeWin = require('active-win');
 const opts = {
   identity: {
@@ -11,6 +10,7 @@ const opts = {
     'majorlee_army'
   ]
 };
+var version = "v1.02";
 
 
 (async () => { 
@@ -40,7 +40,7 @@ console.log(`* RX: ${commandName}`);
 switch(commandName){
 	case 'dice':
 	    const num = rollDice(commandName);
-	    client.say(target, `You rolled a ${num}. Link: https://glitch.com/~twitch-chatbot`);
+	    client.say(target, `You rolled a ${num}.`);
 	    console.log(`* Executed ${commandName} command`);
 		break;
 	case 'help':
@@ -54,6 +54,8 @@ switch(commandName){
 	    break;
 	case 'reboot':
 		client.say(target, `we not there yet, you goto do it manual`);
+	case 'version':
+		client.say(target, `${version}`);
 	    break;
 	default:
    		console.log(`* Unknown command ${commandName}`);
