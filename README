@@ -10,9 +10,11 @@ https://www.npmjs.com/package/play  ;; current O/S Linux deb ubuntu "apt-get sox
 
 
 logs
+shelljs functions posted for youtube firefox
+shelljs added
 v1.04 started
 
 1.03 changes added alert functional  with play
 https://www.npmjs.com/package/play  ;; current O/S Linux deb ubuntu "apt-get sox"
-
+pre_1.03
 Testings have failed with robotjs, suspected xfce O/S compatibility issues
