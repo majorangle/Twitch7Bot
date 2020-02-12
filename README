@@ -5,4 +5,14 @@ Twitch Bot
 --Requirments 
 https://nodejs.org/en/
 https://www.npmjs.com/
-Version 1.03 later with https://robotjs.io/docs/
+https://www.npmjs.com/package/active-win
+https://www.npmjs.com/package/play  ;; current O/S Linux deb ubuntu "apt-get sox"
+
+
+logs
+v1.04 started
+
+1.03 changes added alert functional  with play
+https://www.npmjs.com/package/play  ;; current O/S Linux deb ubuntu "apt-get sox"
+
+Testings have failed with robotjs, suspected xfce O/S compatibility issues

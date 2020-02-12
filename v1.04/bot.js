@@ -1,10 +1,11 @@
 // majorlee @ http://github.com/majorleearmy
-const myModule = require('./login.js'); // Public define, for github
+// const myModule = require('./login.js'); // Public define, for github
+const myModule = require('/home/major/Documents/twitch/login.js'); // private define, for testing and demo
 const tmi = require('tmi.js');
 const activeWin = require('active-win');
 var player = require('play-sound')(soundopts = {});
 
-var version = "v1.03";
+var version = "v1.04";
 const opts = {
   identity: {
     username: myModule.username(),
@@ -54,7 +55,7 @@ switch(commandName){
    		console.log(`${version}`);
 		break;
 	case 'help':
-		client.say(target, `Commands (help,what,dice,reboot,test,main,version,alert,discord)`);
+		client.say(target, `Commands (help,what,dice,reboot,test,main,version)`);
 		client.say(target, `savvy ${target}?`);
 	    break;
 	case 'dice':
@@ -62,6 +63,8 @@ switch(commandName){
 	    client.say(target, `You rolled a ${num}.`);
 	    console.log(`${target}* Executed ${commandName} command`);
 		break;
+	case 'youtube':
+		client.say(target, ``);
 	    break;
 	case 'what': 
 		(async () => { 
