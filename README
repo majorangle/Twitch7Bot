@@ -10,6 +10,9 @@ https://www.npmjs.com/package/play  ;; current O/S Linux deb ubuntu "apt-get sox
 
 
 logs
+v1.11 - stableish
+fixed shell.exec(`exec  firefox loop issue
+v1.05
 shelljs functions posted for youtube firefox
 shelljs added
 v1.04 started

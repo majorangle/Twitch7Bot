@@ -5,8 +5,9 @@ const tmi = require('tmi.js');
 const activeWin = require('active-win');
 var player = require('play-sound')(soundopts = {});
 var shell         = require('shelljs');
-
-var version = "v1.05";
+var commands = ['help','discord','alert','codeup','codedown','youtube','what','dice','reboot','shell','test','main','files','code','version'];
+var string;
+var version = "v1.11";
 const opts = {
   identity: {
     username: myModule.username(),
@@ -56,8 +57,10 @@ switch(commandName){
    		console.log(`${version}`);
 		break;
 	case 'help':
-		client.say(target, `Commands (help,what,dice,reboot,shell,test,main,files,code,version)`);
-		client.say(target, `savvy ${target}?`);
+		for (var cmd of commands){	
+		if (string) {		string =  "| " + cmd + " |" + string}
+		else {		string =  "| " + cmd + " |"}}
+		client.say(target, `Commands : ${string}`);
 	    break;
 	case 'dice':
 	    const num = rollDice(commandName);
