@@ -5,4 +5,6 @@ Twitch Bot
 --Requirments 
 https://nodejs.org/en/
 https://www.npmjs.com/
-Version 1.03 later with https://robotjs.io/docs/
+https://www.npmjs.com/package/active-win
+
+Testings have failed with robotjs, suspected xfce O/S compatibility issues
