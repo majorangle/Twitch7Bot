@@ -1,6 +1,5 @@
 // majorlee @ http://github.com/majorleearmy
-// const myModule = require('./login.js'); // Public define, for github
-const myModule = require('/home/major/Documents/twitch/login.js'); // private define, for testing and demo
+const myModule = require('./login.js'); // Public define, for github
 const tmi = require('tmi.js');
 const activeWin = require('active-win');
 var player = require('play-sound')(soundopts = {});

@@ -4,7 +4,7 @@ git remote add origin https://github.com/majorleearmy/Twitch7Bot.git
 
 git pull upstream master
 git add ./*
-git commit -m "V1.05 updates"
+git commit -m "V1.11 updates"
 git remote set-url origin https://github.com/majorleearmy/Twitch7Bot.git
 git status
 git push origin master
